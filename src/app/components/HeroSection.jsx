@@ -1,6 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
+"use client";
 import React from "react";
 import Image from "next/image";
+
+import { TypeAnimation } from "react-type-animation";
 
 const HeroSection = () => {
   return (
@@ -11,7 +14,25 @@ const HeroSection = () => {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
               Hello, I'm{" "}
             </span>
-            Yusufhan
+            <br />
+            <TypeAnimation
+              sequence={[
+                // Same substring at the start will only be typed out once, initially
+                "Yusufhan",
+                1000, // wait 1s before replacing "Mice" with "Hamsters"
+                "Computer Engineer",
+                1000,
+                "Web Developer",
+                1000,
+                "Mobile Developer",
+                1000,
+                "UI/UX Designer",
+                1000,
+              ]}
+              wrapper="span"
+              speed={50}
+              repeat={Infinity}
+            />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore est
