@@ -65,7 +65,7 @@ const AboutSection = () => {
         <Image src={"/images/aboutme.jpeg"} width={500} height={500} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-          <p className="text-base lg:text-lg">
+          <p className="text-base text-justify lg:text-lg">
             Yusufhan Saçak, a distinguished Full Stack Developer from Istanbul,
             Turkey, stands out with a strong academic and professional
             background. He's the founder and former president of Bi'Siber (BİLGİ
@@ -88,16 +88,16 @@ const AboutSection = () => {
               Skills
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("education")}
-              active={tab === "education"}
-            >
-              Education
-            </TabButton>
-            <TabButton
               selectTab={() => handleTabChange("experience")}
               active={tab === "experience"}
             >
               Experience
+            </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange("education")}
+              active={tab === "education"}
+            >
+              Education
             </TabButton>
           </div>
           <div className="mt-8">
