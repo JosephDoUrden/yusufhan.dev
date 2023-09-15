@@ -68,17 +68,17 @@ const AboutSection = () => {
           <p className="text-base text-justify lg:text-lg">
             Yusufhan Saçak, a distinguished Full Stack Developer from Istanbul,
             Turkey, stands out with a strong academic and professional
-            background. He's the founder and former president of Bi'Siber (BİLGİ
-            Cyber Security Club), showcasing his leadership skills. Graduating
-            with honors in Cyber Security from Istanbul Bilgi University and
-            later transitioning to Bahçeşehir University for Computer
-            Engineering, Yusufhan is proficient in a wide array of technologies,
-            including C++, Java, Python, Flutter, HTML, CSS, JavaScript, NodeJS,
-            PHP, and MySQL. He adeptly balances his academic pursuits with
-            practical web and mobile development. Furthermore, he actively
-            engages in student clubs and contributes to socially responsible
-            initiatives. His commitment to innovation is exemplified through his
-            engaging UI/UX projects.
+            background. He&apos;s the founder and former president of
+            Bi&apos;Siber (BİLGİ Cyber Security Club), showcasing his leadership
+            skills. Graduating with honors in Cyber Security from Istanbul Bilgi
+            University and later transitioning to Bahçeşehir University for
+            Computer Engineering, Yusufhan is proficient in a wide array of
+            technologies, including C++, Java, Python, Flutter, HTML, CSS,
+            JavaScript, NodeJS, PHP, and MySQL. He adeptly balances his academic
+            pursuits with practical web and mobile development. Furthermore, he
+            actively engages in student clubs and contributes to socially
+            responsible initiatives. His commitment to innovation is exemplified
+            through his engaging UI/UX projects.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
