@@ -70,7 +70,7 @@ const AboutSection = () => {
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-          <p className="text-base text-justify lg:text-lg">
+          <p className="text-base md:text-justify text-start lg:text-lg">
             Yusufhan Saçak, a distinguished Full Stack Developer from Istanbul,
             Turkey, stands out with a strong academic and professional
             background. He&apos;s the founder and former president of

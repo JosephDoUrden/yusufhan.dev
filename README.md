@@ -5,6 +5,7 @@
 ![screenshot](image.png)
 
 ## Tech Stack
+
 - NextJS
 - Tailwind CSS
 
