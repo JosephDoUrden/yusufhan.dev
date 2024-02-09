@@ -65,6 +65,36 @@ const projectsData = [
       "https://github.com/JosephDoUrden/Product-Preview-Card-Component-Solution",
     previewUrl: "https://product-card-ysfsck.netlify.app/",
   },
+  {
+    id: 7,
+    title: "Todo App with Flutter and Riverpod",
+    description:
+      "A Flutter Todo app leveraging Riverpod for efficient state management. Organize tasks effortlessly with CRUD operations. Stay productive on the go!",
+    image: "/images/projects/todo-riverpod.png",
+    tag: ["All", "Mobile"],
+    gitUrl: "https://github.com/JosephDoUrden/flutter-todo-app-with-riverpod",
+    previewUrl: "#",
+  },
+  {
+    id: 8,
+    title: "Nike Shoe Store",
+    description:
+      "Explore Nike's innovative world through my concept website, blending Tailwind CSS, React, and Vite for a dynamic online experience.",
+    image: "/images/projects/nike-website.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/JosephDoUrden/nike-website",
+    previewUrl: "https://nike-website-josephdourden.netlify.app/",
+  },
+  {
+    id: 9,
+    title: "Twitter Clone",
+    description:
+      "This project is a Twitter clone built with Next.js, a popular React framework. It allows users to create, read, and interact with tweets, just like the real Twitter. Here's a brief guide to get you started with this project.",
+    image: "/images/projects/twitter-clone.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/JosephDoUrden/twitter-clone",
+    previewUrl: "https://twitter-clone-lilac-rho.vercel.app/",
+  },
 ];
 
 const ProjectsSection = () => {
