@@ -1,122 +1,76 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable react/no-unescaped-entities */
 "use client";
-import React, { useState } from "react";
+import React from "react";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
 import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
-import Link from "next/link";
-import Image from "next/image";
 
 const EmailSection = () => {
-  const [emailSubmitted, setEmailSubmitted] = useState(false);
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const data = {
-      email: e.target.email.value,
-      subject: e.target.subject.value,
-      message: e.target.message.value,
-    };
-    const JSONdata = JSON.stringify(data);
-    const endpoint = "/api/send";
-    const options = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSONdata,
-    };
-    const response = await fetch(endpoint, options);
-    const resData = await response.json();
-
-    if (response.status === 200) {
-      setEmailSubmitted(true);
-    }
-  };
   return (
     <section
       id="contact"
-      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
+      className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16"
     >
-      <div className="">
+      <div className="md:col-span-1">
         <h5 className="text-xl font-bold text-purple-400 my-2">
-          Let&apos;s Connect
+          Let's Connect
         </h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
-          I&apos;m currently looking for new opportunities, my inbox is always
-          open. Whether you have a question or just want to say hi, I&apos;ll
-          try my best to get back to you!
+          I'm currently looking for new opportunities, and my inbox is always
+          open. Whether you have a question or just want to say hi, I'll do my
+          best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link target="_blank" href={"https://github.com/JosephDoUrden"}>
-            <Image src={GithubIcon} alt="Github Icon" />
+          <Link href="https://github.com/JosephDoUrden" target="_blank">
+            <Image src={GithubIcon} alt="Github Icon" width={40} height={40} />
           </Link>
           <Link
+            href="https://www.linkedin.com/in/yusufhansacak/"
             target="_blank"
-            href={"https://www.linkedin.com/in/yusufhansacak/"}
           >
-            <Image src={LinkedinIcon} alt="Linkedin Icon" />
+            <Image
+              src={LinkedinIcon}
+              alt="Linkedin Icon"
+              width={40}
+              height={40}
+            />
           </Link>
         </div>
-      </div>
-      <div>
-        <form className="flex flex-col" onSubmit={handleSubmit}>
-          <div className="mb-6">
-            <label
-              htmlFor="email"
-              className="text-white block mb-2 text-sm font-medium"
-            >
-              Your email
-            </label>
-            <input
-              name="email"
-              type="email"
-              id="email"
-              required
-              className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-              placeholder="name@example.com"
-            />
-          </div>
-          <div className="mb-6">
-            <label
-              htmlFor="subject"
-              className="text-white block mb-2 text-sm font-medium"
-            >
-              Subject
-            </label>
-            <input
-              name="subject"
-              type="text"
-              id="subject"
-              required
-              className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-              placeholder="Just saying hi!"
-            />
-          </div>
-          <div className="mb-6">
-            <label
-              htmlFor="message"
-              className="text-white block mb-2 text-sm font-medium"
-            >
-              Message
-            </label>
-            <textarea
-              name="message"
-              id="message"
-              required
-              className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-              placeholder="Let's talk about..."
-            ></textarea>
-          </div>
-          <button
-            type="submit"
-            className="bg-purple-500 hover:bg-purple-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
+        <div className="mt-8">
+          <p className="text-gray-400 md:text-sm text-lg">
+            Feel free to reach out at
+          </p>
+          <a
+            href="mailto:yusufhan.sacak@bahcesehir.edu.tr"
+            className="text-purple-500 text-lg font-bold md:text-2xl"
           >
-            Send Message
-          </button>
-          {emailSubmitted && (
-            <p className="text-green-500 text-sm mt-2">
-              Email sent successfully!
-            </p>
-          )}
-        </form>
+            yusufhan.sacak@bahcesehir.edu.tr
+          </a>
+        </div>
+      </div>
+      <div className="md:col-span-1">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          className="place-self-center mt-4 lg:mt-0"
+          whileHover={{ scale: 1.05 }}
+          style={{ display: "flex", justifyContent: "flex-end" }}
+        >
+          <div className="mt-12 lg:mt-0">
+            <img
+              alt="lorem picsum"
+              src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2JkMjI0NjRhOHBmOG82ODJxdnA0OHlhdDQwbXNsa25kaG1zaG44MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mCRJDo24UvJMA/giphy.gif"
+              width={500}
+              height={500}
+              className="object-cover rounded-full"
+              style={{ maxWidth: "100%" }}
+            />
+          </div>
+        </motion.div>
       </div>
     </section>
   );
