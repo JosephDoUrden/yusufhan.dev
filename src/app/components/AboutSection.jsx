@@ -21,7 +21,7 @@ const TAB_DATA = [
         <li>C++, Java, Python, NodeJS</li>
         <li>PHP & MySQL</li>
         <li>Flutter, Swift, React, NextJS</li>
-        <li>Javascript | Typescript</li>
+        <li>JavaScript | TypeScript</li>
       </ul>
     ),
   },
