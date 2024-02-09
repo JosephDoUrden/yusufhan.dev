@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 import React, { useTransition, useState } from "react";
 import Image from "next/image";
@@ -9,14 +10,18 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Flutter</li>
-        <li>C++</li>
-        <li>SQL</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>PHP</li>
         <li>Project Management</li>
+        <li>Public Relations</li>
+        <li>Teamwork</li>
+        <li>Time Management</li>
+        <li>Leadership</li>
+        <li>Effective Communication</li>
+        <li>Critical Thinking</li>
+        <li>Web & Mobile Development</li>
+        <li>C++, Java, Python, NodeJS</li>
+        <li>PHP & MySQL</li>
+        <li>Flutter, Swift, React, NextJS</li>
+        <li>Javascript | Typescript</li>
       </ul>
     ),
   },
@@ -71,19 +76,15 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base md:text-justify text-start lg:text-lg">
-            Yusufhan Saçak, a distinguished Full Stack Developer from Istanbul,
-            Turkey, stands out with a strong academic and professional
-            background. He&apos;s the founder and former president of
-            Bi&apos;Siber (BİLGİ Cyber Security Club), showcasing his leadership
-            skills. Graduating with honors in Cyber Security from Istanbul Bilgi
-            University and later transitioning to Bahçeşehir University for
-            Computer Engineering, Yusufhan is proficient in a wide array of
-            technologies, including C++, Java, Python, Flutter, HTML, CSS,
-            JavaScript, NodeJS, PHP, and MySQL. He adeptly balances his academic
-            pursuits with practical web and mobile development. Furthermore, he
-            actively engages in student clubs and contributes to socially
-            responsible initiatives. His commitment to innovation is exemplified
-            through his engaging UI/UX projects.
+            Yusufhan Sacak, a Full Stack Developer, brings a unique blend of
+            technical prowess and creative flair to the world of web and mobile
+            development. Fueled by a deep passion for cybersecurity, he
+            graduated with top honours from Istanbul Bilgi University's Cyber
+            Security Department. Beyond the coding screen, Yusufhan is a natural
+            leader, steering the helm at the Bi'Siber Cyber Security Club and
+            infusing his innovative spirit into captivating UI/UX designs. In a
+            rapidly evolving tech landscape, he stands out not just for his
+            skills but for the genuine enthusiasm he brings to every project.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
