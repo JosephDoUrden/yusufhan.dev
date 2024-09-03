@@ -42,9 +42,9 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            As a skilled full-stack developer, I am dedicated to turning ideas
-            into innovative web and mobile applications. Explore my latest
-            projects and articles, showcasing my expertise in Flutter and web
+            As a skilled Software Engineer, I am dedicated to turning ideas into
+            innovative web and mobile applications. Explore my latest projects
+            and articles, showcasing my expertise in Flutter and web
             development.
           </p>
           <div>

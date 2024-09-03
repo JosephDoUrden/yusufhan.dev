@@ -7,6 +7,36 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
+    title: "Retro Zero Games",
+    description:
+      "retrozero.games is a portfolio website that showcases my clients projects and articles. It is built with Next.js, Tailwind CSS, and Framer Motion.",
+    image: "/images/projects/retrozero-games.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/JosephDoUrden/retrozero.games",
+    previewUrl: "https://retrozero.games/",
+  },
+  {
+    id: 2,
+    title: "RFID Based Access Control System",
+    description:
+      "This project is a Capstone Project for the Computer Engineering Department at Bahçeşehir University. It is an RFID-based access control system that allows users to access a building using RFID cards.",
+    image: "/images/projects/RFID-Based-Access-Control-System.png",
+    tag: ["All", "Mobile"],
+    gitUrl: "https://github.com/JosephDoUrden/RFID-Based-Access-Control-System",
+    previewUrl: "/",
+  },
+  {
+    id: 3,
+    title: "Book Store (MERN Stack)",
+    description:
+      "This is a simple Book Store Project built using the MERN (MongoDB, Express.js, React, and Node.js) stack. This project demonstrates basic CRUD (Create, Read, Update, Delete) operations on both the backend and frontend, including routing and CORS policy configuration.",
+    image: "/images/projects/book-store.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/JosephDoUrden/Book-Store-Project",
+    previewUrl: "/",
+  },
+  {
+    id: 4,
     title: "Flutter Travel App Landing Page UI",
     description:
       "This venture presents a contemporary and adaptable user interface (UI) for a travel app's landing page, developed using Flutter.",
@@ -16,7 +46,7 @@ const projectsData = [
     previewUrl: "/",
   },
   {
-    id: 2,
+    id: 5,
     title: "Flutter Ninebot Gokart PRO Mobile App UI",
     description: "Ninebot Gokart PRO Mobile App UI Design Concept!",
     image: "/images/projects/gokart-pro-ui.png",
@@ -25,7 +55,7 @@ const projectsData = [
     previewUrl: "/",
   },
   {
-    id: 3,
+    id: 6,
     title: "Flutter Furniture App UI",
     description:
       "Welcome to the Furniture App UI! This Flutter-based mobile application provides users with a sleek and intuitive interface to explore and shop for various furniture items.",
@@ -35,7 +65,7 @@ const projectsData = [
     previewUrl: "/",
   },
   {
-    id: 4,
+    id: 7,
     title: "Flutter Responsive Modern Login UI",
     description:
       "This project showcases a modern, responsive login user interface (UI) built using Flutter.",
@@ -45,7 +75,7 @@ const projectsData = [
     previewUrl: "/",
   },
   {
-    id: 5,
+    id: 8,
     title: "Medium Clone with Bootstrap",
     description:
       "Bootstrap-powered Medium clone for seamless content creation and sharing. Explore, write, and connect with this user-friendly platform.",
@@ -55,7 +85,7 @@ const projectsData = [
     previewUrl: "http://yusufhansck-medium-clone.surge.sh/",
   },
   {
-    id: 6,
+    id: 9,
     title: "Product Preview",
     description:
       "This is a solution to the Product preview card component challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
@@ -66,7 +96,7 @@ const projectsData = [
     previewUrl: "https://product-card-ysfsck.netlify.app/",
   },
   {
-    id: 7,
+    id: 10,
     title: "Todo App with Flutter and Riverpod",
     description:
       "A Flutter Todo app leveraging Riverpod for efficient state management. Organize tasks effortlessly with CRUD operations. Stay productive on the go!",
@@ -76,7 +106,7 @@ const projectsData = [
     previewUrl: "#",
   },
   {
-    id: 8,
+    id: 11,
     title: "Nike Shoe Store",
     description:
       "Explore Nike's innovative world through my concept website, blending Tailwind CSS, React, and Vite for a dynamic online experience.",
@@ -86,7 +116,7 @@ const projectsData = [
     previewUrl: "https://nike-website-josephdourden.netlify.app/",
   },
   {
-    id: 9,
+    id: 12,
     title: "Twitter Clone",
     description:
       "This project is a Twitter clone built with Next.js, a popular React framework. It allows users to create, read, and interact with tweets, just like the real Twitter. Here's a brief guide to get you started with this project.",

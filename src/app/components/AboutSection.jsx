@@ -12,15 +12,12 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li>Project Management</li>
         <li>Public Relations</li>
-        <li>Teamwork</li>
-        <li>Time Management</li>
         <li>Leadership</li>
         <li>Effective Communication</li>
-        <li>Critical Thinking</li>
         <li>Web & Mobile Development</li>
         <li>C++, Java, Python, NodeJS</li>
         <li>PHP & MySQL</li>
-        <li>Flutter, Swift, React, NextJS</li>
+        <li>Flutter, Swift</li>
         <li>JavaScript | TypeScript</li>
       </ul>
     ),
@@ -40,6 +37,10 @@ const TAB_DATA = [
     id: "experience",
     content: (
       <ul className="list-disc pl-2">
+        <li>
+          Doğuş Technology, Mobile Application Development Intern (Jul 2024 -
+          Present)
+        </li>
         <li>DEV Secure, Software Development Intern (May 2023 - Jul 2023)</li>
         <li>Yetkin Gencler, Trainee (Jan 2022 - May 2022)</li>
         <li>
@@ -76,15 +77,16 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base md:text-justify text-start lg:text-lg">
-            Yusufhan Sacak, a Full Stack Developer, brings a unique blend of
+            Yusufhan Sacak, a Software Engineer, brings a unique blend of
             technical prowess and creative flair to the world of web and mobile
             development. Fueled by a deep passion for cybersecurity, he
             graduated with top honours from Istanbul Bilgi University's Cyber
-            Security Department. Beyond the coding screen, Yusufhan is a natural
-            leader, steering the helm at the Bi'Siber Cyber Security Club and
-            infusing his innovative spirit into captivating UI/UX designs. In a
-            rapidly evolving tech landscape, he stands out not just for his
-            skills but for the genuine enthusiasm he brings to every project.
+            Security Department and Bahçeşehir University Computer Engineering
+            department. Beyond the coding screen, Yusufhan is a natural leader,
+            steering the helm at the Bi'Siber Cyber Security Club and infusing
+            his innovative spirit into captivating UI/UX designs. In a rapidly
+            evolving tech landscape, he stands out not just for his skills but
+            for the genuine enthusiasm he brings to every project.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
