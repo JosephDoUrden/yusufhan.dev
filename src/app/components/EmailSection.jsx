@@ -44,10 +44,10 @@ const EmailSection = () => {
             Feel free to reach out at
           </p>
           <a
-            href="mailto:yusufhan.sacak@bahcesehir.edu.tr"
+            href="mailto:yusufhansck@gmail.com"
             className="text-purple-500 text-lg font-bold md:text-2xl"
           >
-            yusufhan.sacak@bahcesehir.edu.tr
+            yusufhansck@gmail.com
           </a>
         </div>
       </div>
