@@ -15,7 +15,7 @@
     "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
     "framer-motion": "^10.16.4",
-    "next": "^14.2.10",
+    "next": "^13.5.6",
     "postcss": "^8.4.35",
     "react": "18.2.0",
     "react-animated-numbers": "^0.16.0",
@@ -25,7 +25,6 @@
     "tailwindcss": "3.3.3"
   },
   "devDependencies": {
-    "encoding": "^0.1.13",
-    "next": "^14.2.10"
+    "encoding": "^0.1.13"
   }
 }
