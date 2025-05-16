@@ -7,6 +7,37 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
+    title: "Audi Mobile App",
+    description:
+      "Developed at Doğuş Teknoloji, this Flutter-based mobile application offers Audi owners comprehensive vehicle management, service booking, and exclusive content. Features include digital service history, dealer locator, and personalized vehicle information.",
+    image: "/images/projects/benim-audim.png",
+    tag: ["All", "Mobile"],
+    gitUrl: "https://apps.apple.com/tr/app/benimaudim/id1222952755?l=tr",
+    previewUrl:
+      "https://play.google.com/store/apps/details?id=tr.com.dteknoloji.benimaudim&hl=tr&pli=1",
+  },
+  {
+    id: 2,
+    title: "Seat Mobile App",
+    description:
+      "Created during my time at Doğuş Teknoloji, this Flutter application provides Seat vehicle owners with a seamless mobile experience. Features include maintenance scheduling, vehicle status monitoring, and direct communication channels with authorized service centers.",
+    image: "/images/projects/seat-my-app.png",
+    tag: ["All", "Mobile"],
+    gitUrl: "/",
+    previewUrl: "#",
+  },
+  {
+    id: 3,
+    title: "Cupra Mobile App",
+    description:
+      "Developed for Doğuş Teknoloji, this premium Flutter application serves Cupra vehicle owners with an elegant interface and advanced features. The app offers performance tracking, personalized vehicle insights, service reminders, and exclusive Cupra content.",
+    image: "/images/projects/cupra.png",
+    tag: ["All", "Mobile"],
+    gitUrl: "/",
+    previewUrl: "#",
+  },
+  {
+    id: 4,
     title: "Retro Zero Games",
     description:
       "retrozero.games is a portfolio website that showcases my clients projects and articles. It is built with Next.js, Tailwind CSS, and Framer Motion.",
@@ -16,7 +47,7 @@ const projectsData = [
     previewUrl: "https://retrozero.games/",
   },
   {
-    id: 2,
+    id: 5,
     title: "RFID Based Access Control System",
     description:
       "This project is a Capstone Project for the Computer Engineering Department at Bahçeşehir University. It is an RFID-based access control system that allows users to access a building using RFID cards.",
@@ -26,7 +57,7 @@ const projectsData = [
     previewUrl: "/",
   },
   {
-    id: 3,
+    id: 6,
     title: "Book Store (MERN Stack)",
     description:
       "This is a simple Book Store Project built using the MERN (MongoDB, Express.js, React, and Node.js) stack. This project demonstrates basic CRUD (Create, Read, Update, Delete) operations on both the backend and frontend, including routing and CORS policy configuration.",
@@ -36,7 +67,7 @@ const projectsData = [
     previewUrl: "/",
   },
   {
-    id: 4,
+    id: 7,
     title: "Flutter Travel App Landing Page UI",
     description:
       "This venture presents a contemporary and adaptable user interface (UI) for a travel app's landing page, developed using Flutter.",
@@ -46,7 +77,7 @@ const projectsData = [
     previewUrl: "/",
   },
   {
-    id: 5,
+    id: 8,
     title: "Flutter Ninebot Gokart PRO Mobile App UI",
     description: "Ninebot Gokart PRO Mobile App UI Design Concept!",
     image: "/images/projects/gokart-pro-ui.png",
@@ -55,7 +86,7 @@ const projectsData = [
     previewUrl: "/",
   },
   {
-    id: 6,
+    id: 9,
     title: "Flutter Furniture App UI",
     description:
       "Welcome to the Furniture App UI! This Flutter-based mobile application provides users with a sleek and intuitive interface to explore and shop for various furniture items.",
@@ -65,7 +96,7 @@ const projectsData = [
     previewUrl: "/",
   },
   {
-    id: 7,
+    id: 10,
     title: "Flutter Responsive Modern Login UI",
     description:
       "This project showcases a modern, responsive login user interface (UI) built using Flutter.",
@@ -75,28 +106,17 @@ const projectsData = [
     previewUrl: "/",
   },
   {
-    id: 8,
-    title: "Medium Clone with Bootstrap",
+    id: 11,
+    title: "QuizMaster Pro",
     description:
-      "Bootstrap-powered Medium clone for seamless content creation and sharing. Explore, write, and connect with this user-friendly platform.",
-    image: "/images/projects/medium-clone.png",
+      "QuizMaster Pro is a modern, responsive quiz application built with vanilla JavaScript.",
+    image: "/images/projects/quizmaster.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/JosephDoUrden/Medium-Clone",
-    previewUrl: "http://yusufhansck-medium-clone.surge.sh/",
+    gitUrl: "https://github.com/JosephDoUrden/quiz-game",
+    previewUrl: "https://quizmasterpro-js.netlify.app/",
   },
   {
-    id: 9,
-    title: "Product Preview",
-    description:
-      "This is a solution to the Product preview card component challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
-    image: "/images/projects/product-preview.jpg",
-    tag: ["All", "Web"],
-    gitUrl:
-      "https://github.com/JosephDoUrden/Product-Preview-Card-Component-Solution",
-    previewUrl: "https://product-card-ysfsck.netlify.app/",
-  },
-  {
-    id: 10,
+    id: 12,
     title: "Todo App with Flutter and Riverpod",
     description:
       "A Flutter Todo app leveraging Riverpod for efficient state management. Organize tasks effortlessly with CRUD operations. Stay productive on the go!",
@@ -104,26 +124,6 @@ const projectsData = [
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/JosephDoUrden/flutter-todo-app-with-riverpod",
     previewUrl: "#",
-  },
-  {
-    id: 11,
-    title: "Nike Shoe Store",
-    description:
-      "Explore Nike's innovative world through my concept website, blending Tailwind CSS, React, and Vite for a dynamic online experience.",
-    image: "/images/projects/nike-website.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/JosephDoUrden/nike-website",
-    previewUrl: "https://nike-website-josephdourden.netlify.app/",
-  },
-  {
-    id: 12,
-    title: "Twitter Clone",
-    description:
-      "This project is a Twitter clone built with Next.js, a popular React framework. It allows users to create, read, and interact with tweets, just like the real Twitter. Here's a brief guide to get you started with this project.",
-    image: "/images/projects/twitter-clone.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/JosephDoUrden/twitter-clone",
-    previewUrl: "https://twitter-clone-lilac-rho.vercel.app/",
   },
 ];
 
