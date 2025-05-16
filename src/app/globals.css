@@ -3,25 +3,80 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --primary-color: 124, 58, 237;
+  /* Purple-600 */
+  --secondary-color: 236, 72, 153;
+  /* Pink-500 */
+  --accent-color: 59, 130, 246;
+  /* Blue-500 */
+  --background-dark: 18, 18, 18;
+  /* #121212 */
+  --text-primary: 255, 255, 255;
+  /* White */
+  --text-secondary: 173, 183, 190;
+  /* #ADB7BE */
+  --card-background: 24, 24, 24;
+  /* #181818 */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white transition-all duration-300;
+  }
+
+  .btn-secondary {
+    @apply px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 text-white transition-all duration-300;
+  }
+
+  .btn-secondary-inner {
+    @apply block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2 transition-all duration-300;
+  }
+
+  .section-container {
+    @apply py-8 px-4 xl:gap-16 sm:py-16 xl:px-16;
+  }
+
+  .heading-lg {
+    @apply text-2xl xs:text-3xl sm:text-4xl font-bold text-white mb-3 xs:mb-4;
+  }
+
+  .heading-xl {
+    @apply text-3xl xs:text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold;
+  }
+
+  /* Mobile responsive text classes */
+  .text-responsive-xs {
+    @apply text-xs xs:text-sm sm:text-base;
+  }
+
+  .text-responsive-sm {
+    @apply text-sm xs:text-base sm:text-lg;
+  }
+
+  .text-responsive-base {
+    @apply text-base xs:text-lg sm:text-xl;
+  }
+
+  .text-responsive-lg {
+    @apply text-lg xs:text-xl sm:text-2xl;
+  }
+
+  .text-responsive-xl {
+    @apply text-xl xs:text-2xl sm:text-3xl;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: rgb(var(--text-primary));
+  background-color: rgb(var(--background-dark));
 }
