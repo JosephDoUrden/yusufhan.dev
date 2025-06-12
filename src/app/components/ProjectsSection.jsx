@@ -7,6 +7,17 @@ import { motion, useInView, AnimatePresence } from "framer-motion";
 const projectsData = [
   {
     id: 1,
+    title: "Workout Set Timer",
+    description:
+      "A minimalist timer app for set-based workouts like ab training, HIIT, and interval training. Features custom set configuration, flexible durations, automatic rest intervals, and background timer support. Clean interface with no distractions - just reliable timing for your workouts.",
+    image: "/images/projects/workout-set-timer.png",
+    tag: ["All", "Mobile"],
+    gitUrl: "https://github.com/JosephDoUrden/SetTimer",
+    previewUrl: "https://apps.apple.com/us/app/workout-set-timer/id6747051697",
+    tech: ["Flutter", "Dart", "iOS", "Background Processing"],
+  },
+  {
+    id: 2,
     title: "Audi Mobile App",
     description:
       "Developed at Doğuş Teknoloji, this Flutter-based mobile application offers Audi owners comprehensive vehicle management, service booking, and exclusive content. Features include digital service history, dealer locator, and personalized vehicle information.",
@@ -18,7 +29,7 @@ const projectsData = [
     tech: ["Flutter", "Dart", "Firebase", "RESTful API"],
   },
   {
-    id: 2,
+    id: 3,
     title: "Seat Mobile App",
     description:
       "Created during my time at Doğuş Teknoloji, this Flutter application provides Seat vehicle owners with a seamless mobile experience. Features include maintenance scheduling, vehicle status monitoring, and direct communication channels with authorized service centers.",
@@ -29,7 +40,7 @@ const projectsData = [
     tech: ["Flutter", "Dart", "Firebase", "State Management"],
   },
   {
-    id: 3,
+    id: 4,
     title: "Cupra Mobile App",
     description:
       "Developed for Doğuş Teknoloji, this premium Flutter application serves Cupra vehicle owners with an elegant interface and advanced features. The app offers performance tracking, personalized vehicle insights, service reminders, and exclusive Cupra content.",
@@ -40,7 +51,7 @@ const projectsData = [
     tech: ["Flutter", "Dart", "Firebase", "Bloc Pattern"],
   },
   {
-    id: 4,
+    id: 5,
     title: "Retro Zero Games",
     description:
       "retrozero.games is a portfolio website that showcases my clients projects and articles. It is built with Next.js, Tailwind CSS, and Framer Motion.",
@@ -51,7 +62,7 @@ const projectsData = [
     tech: ["Next.js", "React", "Tailwind CSS", "Framer Motion"],
   },
   {
-    id: 5,
+    id: 6,
     title: "RFID Based Access Control System",
     description:
       "This project is a Capstone Project for the Computer Engineering Department at Bahçeşehir University. It is an RFID-based access control system that allows users to access a building using RFID cards.",
@@ -62,7 +73,7 @@ const projectsData = [
     tech: ["Arduino", "RFID", "C++", "Mobile App"],
   },
   {
-    id: 6,
+    id: 7,
     title: "Book Store (MERN Stack)",
     description:
       "This is a Book Store Project built using the MERN stack. This project demonstrates CRUD operations on both the backend and frontend, including routing and CORS policy configuration.",
@@ -73,7 +84,7 @@ const projectsData = [
     tech: ["MongoDB", "Express.js", "React", "Node.js"],
   },
   {
-    id: 7,
+    id: 8,
     title: "Flutter Travel App UI",
     description:
       "This venture presents a contemporary and adaptable user interface (UI) for a travel app's landing page, developed using Flutter.",
@@ -84,7 +95,7 @@ const projectsData = [
     tech: ["Flutter", "Dart", "UI/UX Design"],
   },
   {
-    id: 8,
+    id: 9,
     title: "Flutter Ninebot Gokart PRO UI",
     description:
       "Ninebot Gokart PRO Mobile App UI Design Concept with clean modern design principles!",
@@ -95,7 +106,7 @@ const projectsData = [
     tech: ["Flutter", "Dart", "UI/UX Design"],
   },
   {
-    id: 9,
+    id: 10,
     title: "Flutter Furniture App UI",
     description:
       "Welcome to the Furniture App UI! This Flutter-based mobile application provides users with a sleek and intuitive interface to explore and shop for various furniture items.",
@@ -106,7 +117,7 @@ const projectsData = [
     tech: ["Flutter", "Dart", "UI/UX Design", "Animation"],
   },
   {
-    id: 10,
+    id: 11,
     title: "Flutter Responsive Login UI",
     description:
       "This project showcases a modern, responsive login user interface (UI) built using Flutter with adaptive design for various screen sizes.",
@@ -117,7 +128,7 @@ const projectsData = [
     tech: ["Flutter", "Dart", "Responsive UI"],
   },
   {
-    id: 11,
+    id: 12,
     title: "QuizMaster Pro",
     description:
       "QuizMaster Pro is a modern, responsive quiz application built with vanilla JavaScript, featuring multiple question types and score tracking.",
@@ -128,7 +139,7 @@ const projectsData = [
     tech: ["JavaScript", "HTML", "CSS", "Responsive Design"],
   },
   {
-    id: 12,
+    id: 13,
     title: "Todo App with Flutter and Riverpod",
     description:
       "A Flutter Todo app leveraging Riverpod for efficient state management. Organize tasks effortlessly with CRUD operations. Stay productive on the go!",
